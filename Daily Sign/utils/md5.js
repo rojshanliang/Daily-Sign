@@ -29,22 +29,22 @@ function simpleMD5(string) {
   function H(x,y,z) { return (x ^ y ^ z); }
   function I(x,y,z) { return (y ^ (x | (~z))); }
 
-  function FF(a,b,c,d,x,s,ac) {
+  function FF(a,b,c,d,x, ,ac) {
     a = AddUnsigned(a, AddUnsigned(AddUnsigned(F(b, c, d), x), ac));
     return AddUnsigned(RotateLeft(a, s), b);
   };
 
-  function GG(a,b,c,d,x,s,ac) {
+  function GG(a,b,c,d,x, ,ac) {
     a = AddUnsigned(a, AddUnsigned(AddUnsigned(G(b, c, d), x), ac));
     return AddUnsigned(RotateLeft(a, s), b);
   };
 
-  function HH(a,b,c,d,x,s,ac) {
+  function HH(a,b,c,d,x, ,ac) {
     a = AddUnsigned(a, AddUnsigned(AddUnsigned(H(b, c, d), x), ac));
     return AddUnsigned(RotateLeft(a, s), b);
   };
 
-  function II(a,b,c,d,x,s,ac) {
+  function II(a,b,c,d,x, ,ac) {
     a = AddUnsigned(a, AddUnsigned(AddUnsigned(I(b, c, d), x), ac));
     return AddUnsigned(RotateLeft(a, s), b);
   };
@@ -193,9 +193,9 @@ function simpleMD5(string) {
 }
 
 const originalKeys = {
-  arkKey: 'f8a78a12-df3f-4ea0-8cbb-ee4f30721274',
-  arkModel: 'ep-20240920212434-8mct2',
-  t1qqKey: '3XVUJCg1YmINPt3VXQhQiy8KDT'
+  arkKey: 'f8a78a12-df3f-4ea0-8cbb-ee4f30721274',//豆包API  KEY
+  arkModel: 'ep-20240920212434-8mct2',//火山方舟在线推理的名称
+  t1qqKey: '3XVUJCg1YmINPt3VXQhQiy8KDT'//应天诸葛API 的key https://api.t1qq.com/doc/26
 };
 
 module.exports = {
