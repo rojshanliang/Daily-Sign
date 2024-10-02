@@ -1,0 +1,131 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content-wrapper {
+  width: 90%;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.result-card {
+  background-color: rgba(248, 248, 248, 0.8);
+  border-radius: 10px;
+  padding: 20px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.qian, .jie {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.time {
+  font-size: 14px;
+  color: #888;
+  display: block;
+}
+
+/* 原有的样式保持不变 */
+
+.chat-container {
+  width: 90%;
+  max-width: 600px;
+  height: 500px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 18px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.4;
+  clear: both;
+}
+
+.user-message {
+  background-color: rgba(149, 236, 105, 0.8);  /* 80% 不透明度的 #95EC69 */
+  float: right;
+  margin-right: 28px;
+  border-bottom-right-radius: 5px;
+}
+
+.ai-message {
+  background-color: rgba(255, 255, 255, 0.8);  /* 80% 不透明度的 #FFFFFF */
+  float: left;
+  border-bottom-left-radius: 5px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f0f0;
+  align-items: center;
+}
+
+.chat-input input {
+  flex: 1;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  font-size: 14px;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  height: 36px;
+  padding: 0 15px;
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+/* ... existing styles ... */
+
+.typing-indicator {
+  font-style: italic;
+  color: #888;
+}

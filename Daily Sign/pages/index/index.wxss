@@ -1,0 +1,90 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-box {
+  width: 90%;
+  height: 40px;
+  margin: 20px auto;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.topic-button {
+  width: 24%;
+  height: 80rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+
+.button-icon {
+  font-size: 28rpx;
+  margin-right: 6rpx;
+}
+
+.button-text {
+  font-size: 24rpx;
+}
+
+.love { 
+  background-color: #ff69b4bb; 
+  color: white;
+}
+
+.career { 
+  background-color: #4169b4db; 
+  color: white;
+}
+
+.health { 
+  background-color: #32cd32bb; 
+  color: white;
+}
+
+.relationships { 
+  background-color: #ffa600ba; 
+  color: white;
+}
+
+/* 移除 .bottom-content 和 .sign-button 相关样式 */

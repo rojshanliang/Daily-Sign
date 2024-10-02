@@ -1,0 +1,32 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <image class="background-image" src="../images/background.png" mode="aspectFill"></image>
+  <view class="content-wrapper">
+    <view class="result-card">
+      <text class="title">{{title}}</text>
+      <text class="qian">{{qian}}</text>
+      <!-- <text class="jie">{{jie}}</text> -->
+      <!-- <text class="time">{{time}}</text> -->
+    </view>
+  </view>
+  
+  <view class="chat-container">
+    <scroll-view scroll-y="true" class="chat-messages" scroll-into-view="{{scrollToMessage}}">
+      <block wx:for="{{messages}}" wx:key="index">
+        <view id="msg-{{index}}" class="message {{item.type === 'user' ? 'user-message' : 'ai-message'}}">
+          {{item.content}}
+        </view>
+      </block>
+      <view wx:if="{{isAITyping}}" class="message ai">
+        <text class="typing-indicator">正在输入{{typingDots}}</text>
+      </view>
+    </scroll-view>
+    <view class="chat-input">
+      <input type="text" placeholder="来~问问我吧！" bindinput="onInputChange" value="{{inputValue}}" bindconfirm="sendMessage" confirm-type="send" />
+      <button bindtap="sendMessage">发送</button>
+    </view>
+  </view>
+</view>
+
+
+

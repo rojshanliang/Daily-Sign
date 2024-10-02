@@ -1,0 +1,27 @@
+<view class="container">
+  <image class="background" src="../images/background.png" mode="aspectFill"></image>
+  
+  <view class="top-content">
+    <image class="top-image" src="../images/top_image.png" mode="aspectFit"></image>
+    <input class="input-box" placeholder="想问些什么?" bindinput="handleInput" value="{{inputValue}}" bindconfirm="onConfirm" confirm-type="send" />
+    
+    <view class="button-group">
+      <button class="topic-button love" bindtap="onTopicTap" data-value="爱情">
+        <text class="button-icon">❤️</text>
+        <text class="button-text">爱情</text>
+      </button>
+      <button class="topic-button career" bindtap="onTopicTap" data-value="事业">
+        <text class="button-icon">💼</text>
+        <text class="button-text">事业</text>
+      </button>
+      <button class="topic-button health" bindtap="onTopicTap" data-value="健康">
+        <text class="button-icon">🏃‍♂️</text>
+        <text class="button-text">健康</text>
+      </button>
+      <button class="topic-button relationships" bindtap="onTopicTap" data-value="人际关系">
+        <text class="button-icon">👥</text>
+        <text class="button-text">人际关系</text>
+      </button>
+    </view>
+  </view>
+</view>
