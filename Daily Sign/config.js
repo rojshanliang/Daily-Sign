@@ -1,9 +1,9 @@
 const md5 = require('./utils/md5');
 
 const encryptedKeys = {
-  arkKey: md5.encrypt('f8a78a12-df3f-4ea0-8cbb-ee4f30721274'),
-  arkModel: md5.encrypt('ep-20240920212434-8mct2'),
-  t1qqKey: md5.encrypt('3XVUJCg1YmINPt3VXQhQiy8KDT')
+  arkKey: md5.encrypt(''), //豆包API  KEY
+  arkModel: md5.encrypt(''),//火山方舟在线推理的名称
+  t1qqKey: md5.encrypt('')//应天诸葛API 的key https://api.t1qq.com/doc/26
 };
 
 module.exports = {
